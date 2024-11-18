@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>평가하기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>평가하기</h1>
+    </header>
+    <nav class="gnb">
+        <ul>
+            <li><a href="teacher_main.html">홈</a></li>
+            <li><a href="#">수업 설계하기</a></li>
+            <li><a href="#">수업하기</a></li>
+            <li><a href="evaluation.html">평가하기</a></li>
+            <li><a href="#">대시보드</a></li>
+            <li><a href="#">자기주도학습</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>평가 메뉴</h3>
+            <ul>
+                <li><button onclick="showTab('create')">생성 Tab</button></li>
+                <li><button onclick="showTab('manage')">관리 Tab</button></li>
+            </ul>
+        </aside>
+        <section id="create" class="content">
+            <h2>평가 생성</h2>
+            <ul>
+                <li><button>형성평가</button></li>
+                <li><button>진단평가</button></li>
+                <li><button>총괄평가</button></li>
+            </ul>
+        </section>
+        <section id="manage" class="content" style="display: none;">
+            <h2>평가 관리</h2>
+        </section>
+    </div>
+</body>
+<script>
+function showTab(tabId) {
+    document.getElementById('create').style.display = tabId === 'create' ? 'block' : 'none';
+    document.getElementById('manage').style.display = tabId === 'manage' ? 'block' : 'none';
+}
+</script>
+</html>
