@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f9f9f9;
 }
 
 .masthead {
@@ -29,10 +30,11 @@ body {
   font-size: 16px;
 }
 
-.page__hero {
+.page__hero--overlay {
   text-align: center;
   padding: 50px 20px;
-  background-color: #f4f4f4;
+  background-color: #5e616c;
+  color: #fff;
 }
 
 #page-title {
@@ -42,7 +44,32 @@ body {
 
 .page__lead {
   font-size: 18px;
-  color: #555;
+  color: #eaeaea;
+}
+
+.feature__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.feature__item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.archive__item-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.archive__item-excerpt {
+  font-size: 16px;
+  color: #333;
 }
 
 .page__footer {
@@ -51,6 +78,7 @@ body {
   background-color: #333;
   color: #fff;
 }
+
 
 
 .site-header h1 {
