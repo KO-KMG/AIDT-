@@ -1,13 +1,28 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" class="no-js">
   <head>
     <meta charset="utf-8">
     <title>AI 초등 디지털교과서</title>
+    <meta name="description" content="AI 디지털교과서를 통해 초등학생들을 위한 스마트 학습 경험을 제공합니다.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+    </script>
+
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <header class="masthead">
+
+  <body class="layout--splash" dir="ltr">
+    <nav class="skip-links">
+      <ul>
+        <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+        <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+        <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+      </ul>
+    </nav>
+
+    <div class="masthead">
       <div class="masthead__inner-wrap">
         <div class="masthead__menu">
           <nav id="site-nav" class="greedy-nav">
@@ -25,14 +40,45 @@
           </nav>
         </div>
       </div>
-    </header>
-    
-    <main id="main">
-      <section class="page__hero">
-        <h1 id="page-title">AI 디지털교과서 메인</h1>
-        <p class="page__lead">초등 AIDT mockup</p>
-      </section>
-    </main>
+    </div>
+
+    <div class="initial-content">
+      <div class="page__hero--overlay" style="background-color: #5e616c;">
+        <div class="wrapper">
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            AI 디지털교과서 메인
+          </h1>
+          <p class="page__lead">초등 AIDT mockup</p>
+        </div>
+      </div>
+
+      <div id="main" role="main">
+        <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+          <section class="page__content" itemprop="text">
+            <div class="feature__wrapper">
+              <div class="feature__item">
+                <div class="archive__item">
+                  <h2 class="archive__item-title">기능 1</h2>
+                  <p class="archive__item-excerpt">설명 1</p>
+                </div>
+              </div>
+              <div class="feature__item">
+                <div class="archive__item">
+                  <h2 class="archive__item-title">기능 2</h2>
+                  <p class="archive__item-excerpt">설명 2</p>
+                </div>
+              </div>
+              <div class="feature__item">
+                <div class="archive__item">
+                  <h2 class="archive__item-title">기능 3</h2>
+                  <p class="archive__item-excerpt">설명 3</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
 
     <footer class="page__footer">
       <p>© 2024 AI 초등 디지털교과서. All Rights Reserved.</p>
