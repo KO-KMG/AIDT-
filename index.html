@@ -6,11 +6,13 @@
     <meta name="description" content="AI 디지털교과서를 통해 초등학생들을 위한 스마트 학습 경험을 제공합니다.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script>
-      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+  </head>
 
-       <div class="masthead">
+  <body>
+    <header class="masthead">
       <div class="masthead__inner-wrap">
         <div class="masthead__menu">
           <nav id="site-nav" class="greedy-nav">
@@ -28,22 +30,21 @@
           </nav>
         </div>
       </div>
-    </div>
+    </header>
 
-    <div class="initial-content">
-      <div class="page__hero--overlay" style="background-color: #5e616c;">
+    <main class="initial-content">
+      <div class="page__hero--overlay">
         <div class="wrapper">
-          <h1 id="page-title" class="page__title" itemprop="headline">
+          <h1 id="page-title" class="page__title">
             AI 디지털교과서 메인
           </h1>
           <p class="page__lead">초등 AIDT mockup</p>
         </div>
       </div>
-     </div>
+    </main>
 
     <footer class="page__footer">
       <p>© 2024 AI 초등 디지털교과서. All Rights Reserved.</p>
     </footer>
-    <script src="scripts.js"></script>
   </body>
 </html>
