@@ -9,9 +9,15 @@ function showAssignment(type) {
         content.innerHTML = `
             <h2>과제 관리</h2>
             <div class="Assignment">
-                <div>
-                    <label><input type="radio" name="examType" value="개별 과제"> 진단평가</label>
-                    <label><input type="radio" name="examType" value="자기주도학습"> 형성평가</label>
+                <div class="radio-buttons-1">
+                    <label class="radio-button">
+                        <input type="radio" name="examType" value="진단평가">
+                        <span class="custom-radio"></span> 진단평가
+                    </label>
+                    <label class="radio-button">
+                        <input type="radio" name="examType" value="형성평가">
+                        <span class="custom-radio"></span> 형성평가
+                    </label>
                 </div>
                 <input type="text" placeholder="학생 검색..." style="width: 100%; padding: 5px; margin: 10px 0;">
                 <div class="student-list">
