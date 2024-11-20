@@ -101,3 +101,17 @@ body {
 .radio-buttons-2 .radio-button input[type="radio"]:checked ~ .custom-radio {
     border: 2px solid #ffd338;
 }
+.radio-buttons-1 .radio-button input[type="radio"]:checked + .custom-radio {
+    background-color: #4a90e2; /* 체크된 라디오 버튼의 배경색 */
+}
+.radio-button input[type="radio"] {
+    display: none; /* 기본 라디오 버튼 숨기기 */
+}
+.custom-radio {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin-right: 8px;
+}
