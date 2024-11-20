@@ -1,32 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8">
+    <title>AI 초등 디지털교과서</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>교사 메인 페이지</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
-</head>
-<body>
-    <header class="site-header">
-        <div class="wrapper">
-            <h1>교사 메인 페이지</h1>
-            <nav class="site-nav">
-                <ul>
-                    <li><a href="teacher_main.html">홈</a></li>
-                    <li><a href="#">수업 설계하기</a></li>
-                    <li><a href="#">수업하기</a></li>
-                    <li><a href="evaluation.html">평가하기</a></li>
-                    <li><a href="#">대시보드</a></li>
-                    <li><a href="#">자기주도학습</a></li>
-                </ul>
-            </nav>
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="masthead__inner-wrap">
+        <div class="masthead__menu">
+          <nav id="site-nav" class="greedy-nav">
+            <a class="site-title" href="#">
+              AI 초등 디지털교과서
+            </a>
+            <ul class="visible-links">
+              <li class="masthead__menu-item"><a href="#">수업하기</a></li>
+              <li class="masthead__menu-item"><a href="#">수업 설계하기</a></li>
+              <li class="masthead__menu-item"><a href="#">과제/평가 관리</a></li>
+              <li class="masthead__menu-item"><a href="#">대시보드</a></li>
+              <li class="masthead__menu-item"><a href="#">게시판</a></li>
+              <li class="masthead__menu-item"><a href="#">공지/안내</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
-    <main class="site-content">
-        <div class="wrapper">
-            <p>환영합니다! 원하는 메뉴를 선택하세요.</p>
-        </div>
+    
+    <main id="main">
+      <section class="page__hero">
+        <h1 id="page-title">AI 디지털교과서 메인</h1>
+        <p class="page__lead">초등 AIDT mockup</p>
+      </section>
     </main>
-</body>
+
+    <footer class="page__footer">
+      <p>© 2024 AI 초등 디지털교과서. All Rights Reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
 </html>
