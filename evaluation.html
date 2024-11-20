@@ -16,9 +16,10 @@
                     <li><a href="index.html">홈</a></li>
                     <li><a href="#">수업 설계하기</a></li>
                     <li><a href="#">수업하기</a></li>
-                    <li><a href="evaluation.html">평가하기</a></li>
+                    <li><a href="evaluation.html">과제/평가 관리</a></li>
                     <li><a href="#">대시보드</a></li>
-                    <li><a href="#">자기주도학습</a></li>
+                    <li><a href="#">게시판</a></li>
+                    <li><a href="#">공지/안내</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,16 +27,15 @@
     <main class="site-content">
         <div class="wrapper">
             <aside class="sidebar">
-                <h3 onclick="toggleMenu('create-menu')">평가 생성</h3>
+                <h3 onclick="toggleMenu('test-menu')">평가 생성/관리</h3>
                 <ul id="create-menu" class="hidden">
-                    <li onclick="showCreate('형성평가')">형성평가</li>
-                    <li onclick="showCreate('진단평가')">진단평가</li>
-                    <li onclick="showCreate('총괄평가')">총괄평가</li>
-                </ul>
-                <h3 onclick="toggleMenu('manage-menu')">평가 관리하기</h3>
+                    <li onclick="showTest('평가 생성')">평가 생성</li>
+                    <li onclick="showTest('평가 관리')">평가 관리</li>
+                 </ul>
+                <h3 onclick="toggleMenu('assignment-menu')">과제 생성/관리</h3>
                 <ul id="manage-menu" class="hidden">
-                    <li onclick="showManage('반별 관리')">반별 관리</li>
-                    <li onclick="showManage('학생별 관리')">학생별 관리</li>
+                    <li onclick="showAssignment('과제 생성')">과제 생성</li>
+                    <li onclick="showAssignment('과제 관리')">과제 관리</li>
                 </ul>
             </aside>
             <section id="content" class="content">
