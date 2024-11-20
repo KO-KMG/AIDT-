@@ -8,7 +8,7 @@ function showAssignment(type) {
     if (type === '과제 관리') {
         content.innerHTML = `
             <h2>과제 관리</h2>
-            <div class="manage">
+            <div class="Assignment">
                 <div>
                     <label><input type="radio" name="examType" value="개별 과제"> 진단평가</label>
                     <label><input type="radio" name="examType" value="자기주도학습"> 형성평가</label>
