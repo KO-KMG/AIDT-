@@ -11,12 +11,12 @@ function showAssignment(type) {
             <div class="Assignment">
                 <div class="radio-buttons-1">
                     <label class="radio-button">
-                        <input type="radio" name="examType" value="진단평가">
-                        <span class="custom-radio"></span> 진단평가
+                        <input type="radio" name="examType" value="개별 과제">
+                        <span class="custom-radio"></span> 개별 과제
                     </label>
                     <label class="radio-button">
-                        <input type="radio" name="examType" value="형성평가">
-                        <span class="custom-radio"></span> 형성평가
+                        <input type="radio" name="examType" value="자기주도학습">
+                        <span class="custom-radio"></span> 자기주도학습
                     </label>
                 </div>
                 <input type="text" placeholder="학생 검색..." style="width: 100%; padding: 5px; margin: 10px 0;">
@@ -37,8 +37,8 @@ function generateStudents() {
         students.push(`
             <li>
                 학생${i} (점수: ${score}점)
-                <button>평가지 확인</button>
-                <button>평가 결과 확인</button>
+                <button>과제 확인</button>
+                <button>과제 결과 확인</button>
             </li>
         `);
     }
