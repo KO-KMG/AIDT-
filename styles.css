@@ -1,100 +1,89 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    background: white;
-}
-
-header {
-    background: #f8f8f8;
-    text-align: center;
-    padding: 20px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-header h1 {
-    font-size: 24px;
+    line-height: 1.6;
     color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
 }
 
-.gnb ul {
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.site-header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px 0;
+}
+
+.site-header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.site-nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    background: #fffacd;
+    padding: 0;
+    text-align: center;
 }
 
-.gnb ul li a {
-    padding: 10px 15px;
+.site-nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.site-nav ul li a {
+    color: white;
     text-decoration: none;
-    font-size: 16px;
-    color: #000;
+    font-weight: bold;
 }
 
-.container {
-    display: flex;
-}
-
-.sidebar {
-    width: 20%;
-    background: #f0f0f0;
-    padding: 10px;
+.site-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .sidebar h3 {
     cursor: pointer;
-    margin: 10px 0;
-    color: #333;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding-left: 10px;
-}
-
-.hidden {
-    display: none;
-}
-
-hr {
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 5px 0;
-}
-
-.sidebar ul li {
-    margin: 5px 0;
-    padding: 5px;
-    cursor: pointer;
-}
-
-.sidebar ul li:hover {
-    background-color: #ddd;
-}
-
-.content {
-    width: 80%;
-    padding: 20px;
-}
-
-.manage {
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    padding: 20px;
     margin-top: 20px;
+    background: #f4f4f4;
+    padding: 10px;
 }
 
-.student-list ul {
-    list-style: none;
-    padding: 0;
-}
-
-.student-list ul li {
-    margin-bottom: 10px;
+.radio-buttons-1, .radio-buttons-2 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 0.5rem;
+    margin: 10px 0;
 }
 
-.student-list ul li button {
-    margin-left: 10px;
+.radio-button {
+    position: relative;
+    padding-left: 30px;
+}
+
+.radio-button input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.radio-buttons-1 .custom-radio,
+.radio-buttons-2 .custom-radio {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    background: #eee;
+}
+
+.radio-buttons-1 .radio-button input[type="radio"]:checked ~ .custom-radio {
+    background-color: #2196f3;
+}
+
+.radio-buttons-2 .radio-button input[type="radio"]:checked ~ .custom-radio {
+    border: 2px solid #ffd338;
 }
